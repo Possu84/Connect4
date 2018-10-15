@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+}
+
+/* body {
+    display: flex;
+} */
+
+.hole {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: white;
+    margin: auto;
+
+    padding: 10px;
+}
+
+.player1 .hole {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: blue;
+    margin: auto;
+    box-shadow: inset -25px -25px 40px rgba(0, 0, 0, 0.5);
+
+    padding: 10px;
+}
+
+.player2 .hole {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: red;
+    margin: auto;
+    box-shadow: inset -25px -25px 40px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+.slot {
+    width: 80px;
+    height: 80px;
+    background-color: teal;
+    padding: 10px;
+}
+
+#main {
+    margin: 10px 50px 0px;
+    display: flex;
+    text-align: center;
+}
+
+#sideboard {
+    height: 600px;
+    background-color: teal;
+    width: 200px;
+}
+
+.header {
+    font-family: Arial;
+    margin-top: 30px;
+    color: white;
+    font-size: 20px;
+}
+
+#sidetext {
+    font-family: Arial;
+    color: white;
+    padding: 25%;
+}
+
+#curtain {
+    position: fixed; /* positioned separetly*/
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+}
+
+#curtain.show {
+    z-index: 1;
+}
+#text {
+    font-family: Arial;
+    margin: 0 auto;
+    top: 50%;
+    transform: translateY(50%);
+    z-index: -1;
+    width: 500px;
+    height: 250px;
+    background-color: white;
+    box-shadow: 10px 10px 8px #888888;
+    left: 150px;
+    top: 85px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#youwin {
+    margin: 20px;
+    padding: 20px;
+    border: 20px;
+}
+#reset {
+    color: white;
+    background-color: teal;
+    font-size: 15px;
+    margin-top: 30px;
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+}
+
+#currentplayer {
+    border: 4px solid white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: blue;
+    margin: auto;
+    box-shadow: inset -25px -25px 40px rgba(0, 0, 0, 0.5);
+}
+
+#currentplayer.show2 {
+    background-color: red;
+}
+
+#currentplayer.anim {
+    animation-name: anime;
+    animation-duration: 0.5s;
+}
+
+@keyframes anime {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+#currentplayer.anim2 {
+    animation-name: anime2;
+    animation-duration: 0.5s;
+}
+
+@keyframes anime2 {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
