@@ -47,7 +47,7 @@
 #main {
     margin: 10px 50px 0px;
     display: flex;
-    text-align: center;
+    justify-content: center;
 }
 
 #sideboard {
